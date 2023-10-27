@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><i class="fa-solid fa-laptop"></i>Victor<span>Ene-</span>Codes</h1>
+            </div>
+            <nav>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"  onclick="openNav()"></i>
+                    <i class="fa-solid fa-regular fa-xmark" onclick="closeNav()"></i>
+                </div>
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <section>
+            <div class="content-side">
+                <h1>Hi, I'm</h1>
+                <h1 id="typing"></h1>
+                <h4>Welcome to my <span>portfolio</span></h4>
+            </div>
+            <img src="bg2.png" alt="" class="img1">
+        </section>
+        <div id="about">
+            <p class="title">Can we meet you?</p>
+            <h1>INTRODUCTION</h1>
+            <P class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolore, in sequi laborum et provident aspernatur perferendis ea? Soluta maiores quia illum ducimus delectus amet dolorum nihil perferendis quae a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor perspiciatis assumenda quod, doloribus illum? Doloremque veritatis doloribus rerum minima et minus, nesciunt sit similique esse accusantium repudiandae beatae ex!
+            Explicabo provident quaerat necessitatibus rem. Ut voluptate ea asperiores est laboriosam, dolor reprehenderit reiciendis quam. Necessitatibus architecto quas possimus, quaerat in provident blanditiis sint tenetur aut perferendis cum eaque quis.
+            Quas omnis, hic consequuntur quisquam reprehenderit adipisci minima consequatur eius odio asperiores quis voluptatum cupiditate quae doloribus distinctio accusamus a nesciunt temporibus rerum sint incidunt! Pariatur atque a ullam recusandae.</P>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" id="close-popup">X</span>
+                <h2>Popup Title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ea expedita accusantium esse sit harum placeat doloribus fugiat. Ducimus hic amet fugiat aliquam vel, numquam a molestiae dicta! Aperiam, iure?</p>
+            </div>
+        </div>
+        <div id="service">
+            <p class="title">What can you do?</p>
+            <h1>MY SERVICES</h1>
+            <div class="boxes">
+                <div class="box">
+                    <h2>Create New Websites</h2>
+                </div>
+                <div class="box">
+                    <h2>Rebrand Websites</h2>
+                </div>
+                <div class="box">
+                    <h2>Create Contents</h2>
+                </div>
+            </div>
+        </div>
+        <div class="shape"></div>
+        <div id="stack">
+            <p class="title">What are your Tech Stacks?</p>
+            <h1>MY TECH SKILLS</h1>
+            <div class="stacks">
+                <div class="stack1">
+                    <img src="html.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                    HTML</div>
+                <div class="stack1">
+                    <img src="css.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                    CSS</div>
+                <div class="stack1">
+                    <img src="boot.jpg" style="border-radius: 50%; height: 80px; width: 80px;">
+                    Bootstrap CSS</div>
+                <div class="stack1">
+                    <img src="js.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                    JavaScript</div>
+                <div class="stack1">
+                    <img src="php.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                    PHP</div>
+                <div class="stack1">
+                    <img src="jq.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                    JQuery</div>
+                <div class="stack1">
+                    <img src="git.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                    Git/Github</div>
+            </div>
+        </div>
+        <div id="projects">
+            <p class="title">Ever worked on anything?</p>
+            <h1>MY PROJECTS</h1>
+            <div class="project">
+                <div class="project1">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                        </div>
+                        <div class="project-back">
+                            <a href="#">View Demo</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                        </div>
+                        <div class="project-back">
+                            <a href="#">View Demo</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                        </div>
+                        <div class="project-back">
+                            <a href="#">View Demo</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                        </div>
+                        <div class="project-back">
+                            <a href="#">View Demo</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgimg"></div>
+    </div>
+</body>
+</html>
