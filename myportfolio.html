@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <script src="script.js" defer></script>
+    <script src="scripts.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -13,16 +13,16 @@
     <div class="container">
         <header>
             <div class="logo">
-                <h1><i class="fa-solid fa-laptop"></i>Victor<span>Ene-</span>Codes</h1>
+                <a href="#"><h1><i class="fa-solid fa-laptop"></i>Victor<span>Ene-</span>Codes</h1></a>
             </div>
-            <nav>
-                <div class="toggle">
-                    <i class="fa-solid fa-bars"  onclick="openNav()"></i>
-                    <i class="fa-solid fa-regular fa-xmark" onclick="closeNav()"></i>
-                </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"  onclick="openNav()"></i>
+                <i class="fa-solid fa-regular fa-xmark" onclick="closeNav()"></i>
+            </div>
+            <nav id="sideNav">
                 <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
@@ -38,71 +38,72 @@
             </div>
             <img src="bg2.png" alt="" class="img1">
         </section>
-        <div id="about">
+        <div class="sideicon">
+            <div class="social-icon"><a href="mailto: omalevicene@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: rgb(252, 11, 3);"></i></a></div>
+            <div class="social-icon"><a href="https://www.facebook.com/adewale.victor.37" target="_blank"><i class="fa-brands fa-facebook" style="color: rgb(68, 68, 226);"></i></a></div>
+            <div class="social-icon"><a href="https://twitter.com/VictorEne___?s=09" target="_blank"><i class="fa-brands fa-twitter" style="color: rgb(61, 61, 238);"></i></a></div>
+            <div class="social-icon"><a href="https://wa.link/9h0bmr" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(69, 185, 98);"></i></a></div>
+            <div class="social-icon"><a href="https://instagram.com/mr_vickson?igshid=0GQ5ZDc20Dk2ZA==" target="_blank"><i class="fa-brands fa-instagram" style="color: tomato;"></i></a></div>
+        </div>
+        <div class="show about" id="about">
             <p class="title">Can we meet you?</p>
             <h1>INTRODUCTION</h1>
-            <P class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolore, in sequi laborum et provident aspernatur perferendis ea? Soluta maiores quia illum ducimus delectus amet dolorum nihil perferendis quae a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor perspiciatis assumenda quod, doloribus illum? Doloremque veritatis doloribus rerum minima et minus, nesciunt sit similique esse accusantium repudiandae beatae ex!
-            Explicabo provident quaerat necessitatibus rem. Ut voluptate ea asperiores est laboriosam, dolor reprehenderit reiciendis quam. Necessitatibus architecto quas possimus, quaerat in provident blanditiis sint tenetur aut perferendis cum eaque quis.
-            Quas omnis, hic consequuntur quisquam reprehenderit adipisci minima consequatur eius odio asperiores quis voluptatum cupiditate quae doloribus distinctio accusamus a nesciunt temporibus rerum sint incidunt! Pariatur atque a ullam recusandae.</P>
+            <P class="text">Hey there! I'm a web developer and content writer, and my mission is to make your online journey awesome. As a web developer, I'm all about creating websites that are easy to use and look fantastic. I build sites that work smoothly on all your devices, from your computer to your phone. <br><br>
+            On the content side, I'm a storyteller. I write words that grab your attention, whether it's about explaining things clearly, telling a brand's story, or making sure Google notices your site. <br><br>
+            My experience is all about bringing technology and words together to create websites that people love to visit and read. I've worked with different industries, and I know how to make your website stand out. <br><br>
+            I'm here to make your online presence shine. Let's build something amazing together!</P>
         </div>
-        <div class="popup" id="popup">
-            <div class="popup-content">
-                <span class="close" id="close-popup">X</span>
-                <h2>Popup Title</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ea expedita accusantium esse sit harum placeat doloribus fugiat. Ducimus hic amet fugiat aliquam vel, numquam a molestiae dicta! Aperiam, iure?</p>
-            </div>
-        </div>
-        <div id="service">
+        <div class="show service" id="service">
             <p class="title">What can you do?</p>
             <h1>MY SERVICES</h1>
             <div class="boxes">
-                <div class="box">
+                <div class="box" id="left1">
                     <h2>Create New Websites</h2>
                 </div>
-                <div class="box">
+                <div class="box box2" id="left2">
                     <h2>Rebrand Websites</h2>
                 </div>
-                <div class="box">
+                <div class="box box3" id="left3">
                     <h2>Create Contents</h2>
                 </div>
             </div>
         </div>
         <div class="shape"></div>
-        <div id="stack">
+        <div class="show stack" id="stack">
             <p class="title">What are your Tech Stacks?</p>
             <h1>MY TECH SKILLS</h1>
             <div class="stacks">
-                <div class="stack1">
-                    <img src="html.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="html.png" class="img12">
                     HTML</div>
-                <div class="stack1">
-                    <img src="css.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="css.png" class="img12">
                     CSS</div>
-                <div class="stack1">
-                    <img src="boot.jpg" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="boot.jpg" class="img12">
                     Bootstrap CSS</div>
-                <div class="stack1">
-                    <img src="js.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="js.png" class="img12">
                     JavaScript</div>
-                <div class="stack1">
-                    <img src="php.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="php.png" class="img12">
                     PHP</div>
-                <div class="stack1">
-                    <img src="jq.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="jq.png" class="img12">
                     JQuery</div>
-                <div class="stack1">
-                    <img src="git.png" style="border-radius: 50%; height: 80px; width: 80px;">
+                <div class="stack1 down">
+                    <img src="git.png" class="img12">
                     Git/Github</div>
             </div>
         </div>
-        <div id="projects">
+        <div class="show projects" id="projects">
             <p class="title">Ever worked on anything?</p>
             <h1>MY PROJECTS</h1>
             <div class="project">
                 <div class="project1">
                     <div class="project-inner">
                         <div class="project-front">
-                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                            <img src="vickspaint.png" alt="" class="img11">
                         </div>
                         <div class="project-back">
                             <a href="#">View Demo</a>
@@ -113,7 +114,7 @@
                 <div class="project1">
                     <div class="project-inner">
                         <div class="project-front">
-                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                            <img src="vickskitchen.png" alt="" class="img11">
                         </div>
                         <div class="project-back">
                             <a href="#">View Demo</a>
@@ -124,7 +125,7 @@
                 <div class="project1">
                     <div class="project-inner">
                         <div class="project-front">
-                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                            <img src="stocks.png" alt="" class="img11">
                         </div>
                         <div class="project-back">
                             <a href="#">View Demo</a>
@@ -135,7 +136,7 @@
                 <div class="project1">
                     <div class="project-inner">
                         <div class="project-front">
-                            <img src="IMG_0459.jpeg" alt="" style="width:400px; height:400px">
+                            <img src="protege.png" alt="" class="img11">
                         </div>
                         <div class="project-back">
                             <a href="#">View Demo</a>
@@ -145,7 +146,41 @@
                 </div>
             </div>
         </div>
-        <div class="bgimg"></div>
+        <footer id="contact">
+            <div class="foto">
+                <div class="address">
+                    <p class="footer-head">ADDRESS</p>
+                    <ul>
+                        <li><i class="fa-regular fa-location-dot"></i>   Nigeria</li>
+                        <li><i class="fa-solid fa-phone"></i>   +234 915 944 6363</li>
+                        <li><i class="fa-solid fa-envelope"></i>   <a href="mailto: omalevicene@gmail.com">omalevicene@gmail.com</a></li>
+                        <div class="social">
+                            <div class="social-icon" id="left"><a href="https://www.facebook.com/adewale.victor.37" target="_blank"><i class="fa-brands fa-facebook" style="color: rgb(68, 68, 226); font-size: 50px;"></i></a></div>
+                            <div class="social-icon" id="left"><a href="https://twitter.com/VictorEne___?s=09" target="_blank"><i class="fa-brands fa-twitter" style="color: rgb(61, 61, 238);font-size: 50px;"></i></a></div>
+                            <div class="social-icon" id="left"><a href="https://wa.link/9h0bmr" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(69, 185, 98);font-size: 50px;"></i></a></div>
+                            <div class="social-icon" id="left"><a href="https://instagram.com/mr_vickson?igshid=0GQ5ZDc20Dk2ZA==" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 50px;"></i></a></div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <p class="footer-head">SERVICES</p>
+                    <ul>
+                        <li>Create new websites</li>
+                        <li>Rebrand websites</li>
+                        <li>Create contents</li>
+                    </ul>
+                </div>
+                <div class="quicklinks">
+                    <p class="footer-head">QUICK LINKS</p>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Our Services</li>
+                        <li>Terms & Condition</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
